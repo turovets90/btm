@@ -1525,3 +1525,45 @@ h1, .h1{
 
 }
 
+
+
+article{
+  background: #FFFFFF;
+  .box-shadow(0 7px 9px rgba(0, 0, 0, 0.1));
+  .border-radius(5px);
+  margin-top: 55px;
+  padding-bottom: 30px;
+  @media (max-width:1200px){
+    margin-top: 30px;
+  }
+  @media (max-width:767px){
+    margin-top: 20px;
+  }
+
+  .article-header{
+    text-align: center;
+    h1{
+        display: inline-block;
+      max-width: 805px;
+      color: @blue_default;
+    }
+    .date{
+      margin-bottom: 25px;
+      @media (min-width:1200px){
+        font-size: 16px;
+      }
+      @media (max-width:1200px){
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .article-body{
+    max-width: 930px;
+    margin: auto;
+    padding: 25px 15px 0;
+  }
+}
+
+.blue-default{
+  color: @blue_default;
+}
