@@ -40,6 +40,49 @@ $(document).ready(function(){
         $(this).parents(".dropdown").find('.dropdown-toggle').val($(this).data('value'));
     });
 
+    $('.product-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        asNavFor: '.product-slider-nav'
+    });
+    $('.product-slider-nav').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        asNavFor: '.product-slider',
+        dots: false,
+        arrows:false,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }
+
+        ]
+    });
+
 
 });
 
