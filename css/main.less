@@ -1955,4 +1955,68 @@ article{
     }
   }
 
+
+  &.type-object{
+    .btn-block{
+      .flex();
+      .ai-center();
+      .j-end();
+      @media (min-width:1200px){
+        padding-right: 15px;
+      }
+    }
+    .price-block{
+      .flex();
+      .ai-center();
+      .j-start();
+      @media (min-width:1200px){
+        padding-right: 0;
+      }
+      .price-month{
+        margin-bottom: 0;
+      }
+
+    }
+    .products-list__item_img{
+      width: 100%;
+      min-height: 300px;
+      background-size: cover;
+      background-position: center;
+      .border-radius(5px 5px 0 0);
+      @media (max-width:1200px){
+        min-height: 250px;
+      }
+      @media (max-width:767px){
+        min-height: 200px;
+      }
+    }
+    .products-list__item_content{
+      width: 100%;
+      padding-top: 15px;
+      .products-list__item_header{
+        padding-bottom: 15px;
+        @media (max-width:1200px){
+          padding-bottom: 15px;
+        }
+        .title{
+          font-size: 18px;
+          line-height: 21px;
+          @media (max-width:1200px){
+            font-size: 16px;   line-height: 1.2;
+          }
+          @media (max-width:767px){
+            font-size: 14px;
+          }
+
+        }
+      }
+      .products-list__item_body{
+        padding-top: 15px;
+        .desc{
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
 }
